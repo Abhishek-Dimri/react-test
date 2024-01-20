@@ -15,15 +15,30 @@ function App() {
   return (
     <Provider store={store}>
       <Router basename='/react-test'>
-        <div className="App"></div>
-        <Navbar />
-        <AddTodo />
-        <Todos />
-        <CompletedTodos />
-        <About />
-        <Contact />
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route exact path="/"
+              element={<div className="main-container">
+                <div className="todo-section">
+                  <AddTodo />
+                  <Todos />
+                </div>
+                <div className="completed-todos-section">
+                  <CompletedTodos />
+                </div>
+              </div>}
+            ></Route>
+            <Route exact path="/about"
+            element = {<About />} >
+            </Route>
+            <Route exact path="/contact"
+            element = {<Contact />} >
+            </Route>
+          </Routes>
+        </div>
       </Router>
-    </Provider >
+    </Provider>
   );
 }
 
