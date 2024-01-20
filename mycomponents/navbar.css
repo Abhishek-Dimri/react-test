@@ -1,0 +1,119 @@
+/* styles for components/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.navbar-left ul,
+.navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left,
+.navbar-info,
+.navbar-date,
+.navbar-right {
+    padding: 5px;
+}
+
+.navbar-left {
+    order: 1;
+    
+    /* This places it at the left */
+}
+
+.navbar-third {
+    order: 3;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar-info {
+    order: 2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Use flex container */
+    flex-wrap: nowrap;
+    /* Allow flex items to wrap onto multiple lines */
+}
+
+.navbar-info p {
+    font-size: small;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    flex: 1;
+    /* Allow each paragraph to take equal space within the flex container */
+}
+
+.navbar-date p {
+    font-size: small;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+.navbar-left ul li,
+.navbar-right ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar-right .profile-container {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    color: #333;
+}
+
+.dropdown ul li {
+    margin-bottom: 8px;
+}
+
+/* Set color for links in the dropdown */
+.dropdown a {
+    color: #333;
+}
+
+/* Style links */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

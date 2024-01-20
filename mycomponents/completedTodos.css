@@ -1,0 +1,42 @@
+/* CompletedTodos styles */
+/* div {
+    max-width: 40;
+    /* margin: auto; */
+  /* } */ */
+  
+  h4 {
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .completed-todo-item-container {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .completed-todo-item-title {
+    color: #28a745;
+  }
+  
+  .completed-todo-item-desc,
+  .completed-todo-item-time,
+  .completed-todo-item-location {
+    margin: 5px 0;
+  }
+  
+  /* Optional: Add some styling to the delete button */
+  .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
